@@ -8,3 +8,18 @@ function getPrecioConDescuento (){
     return precioConDescuento
 }
 console.log(getPrecioConDescuento())
+
+//El filter es una opción para filtrar colecciones de datos, para partir de un array y crear uno nuevo.
+//Caso de uso: tenemos un array de calificaciones y queremos obtener calificaciones aprobatorias mayores a 6.
+
+let calificaciones = [
+    {nombre:"Julian", calificacion:9},
+    {nombre:"Juan", calificacion:6},
+    {nombre:"Pedro", calificacion:3},
+    {nombre:"Emilio", calificacion:10},
+    {nombre:"Rafael", calificacion:6},
+    {nombre:"Lupita", calificacion:8},
+]
+
+let califcacionesAprobatorias = calificaciones.filter(e=> e.calificacion>6);
+console.log(califcacionesAprobatorias)
