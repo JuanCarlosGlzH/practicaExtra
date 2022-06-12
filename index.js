@@ -9,7 +9,7 @@ function getPrecioConDescuento (){
 }
 console.log(getPrecioConDescuento())
 
-//El filter es una opción para filtrar colecciones de datos, para partir de un array y crear uno nuevo.
+//El filter es un array para filtrar colecciones de datos, para partir de un array y crear uno nuevo.
 //Caso de uso: tenemos un array de calificaciones y queremos obtener calificaciones aprobatorias mayores a 6.
 
 let calificaciones = [
@@ -23,3 +23,11 @@ let calificaciones = [
 
 let califcacionesAprobatorias = calificaciones.filter(e=> e.calificacion>6);
 console.log(califcacionesAprobatorias)
+
+//El find es un array para buscar un elemento dentro de un array y retorna el primero que cumpla con la condición especificada.
+//Caso de uso: encontraremos al alumno con el nombre Emilio dentro del array calificaciones.
+
+let nombre=calificaciones.find(function(nombreAlumno){
+    return nombreAlumno.nombre =='Emilio';
+})
+console.log(nombre);
