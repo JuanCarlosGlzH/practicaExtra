@@ -39,9 +39,30 @@ let AlumnoQueQueda = calificaciones.reduce( (acumulado, sig) => acumulado + sig.
 console.log(AlumnoQueQueda);
 
 //El concat ejecuta la función una vez para cada elemento presente en la matriz y devuelve el indice de el elemento.
-//Caso de uso: 
+//Caso de uso: el metodo findIndex busca la calificacion que cuente con la calificacion exacta dada y elimina la calificacion que tenga 8.
 
 let calificacion = calificaciones.findIndex(em => em.calificacion === 10)
 calificaciones.splice(calificaciones.findIndex(em => em.calificacion === 8), 1)
 
 console.log(calificaciones)
+
+//El shift elimina el primer elemento de una matriz.
+//Caso de uso: 
+
+//promesa
+
+const MiPromesa = new Promise((resolve, reject) => {
+    console.log("Trabajando");
+    setTimeout(function(){
+     resolve("Finalizado");
+    },3000);
+
+});
+
+MiPromesa.then(resultado=>{
+    return resultado;
+}).then(mensaje => {
+     console.log(mensaje);
+}).catch(message=>{
+    console.error(message);
+})
