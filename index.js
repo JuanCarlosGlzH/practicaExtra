@@ -31,3 +31,9 @@ let nombre=calificaciones.find(function(nombreAlumno){
     return nombreAlumno.nombre =='Emilio';
 })
 console.log(nombre);
+
+//El reduce es un array que ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.
+//Caso de uso: 
+
+let AlumnoQueQueda = calificaciones.reduce( (acumulado, sig) => acumulado + sig.capacidad, 0)
+console.log(AlumnoQueQueda);
