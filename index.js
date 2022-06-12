@@ -33,7 +33,15 @@ let nombre=calificaciones.find(function(nombreAlumno){
 console.log(nombre);
 
 //El reduce es un array que ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.
-//Caso de uso: 
+//Caso de uso: ---
 
 let AlumnoQueQueda = calificaciones.reduce( (acumulado, sig) => acumulado + sig.capacidad, 0)
 console.log(AlumnoQueQueda);
+
+//El concat ejecuta la función una vez para cada elemento presente en la matriz y devuelve el indice de el elemento.
+//Caso de uso: 
+
+let calificacion = calificaciones.findIndex(em => em.calificacion === 10)
+calificaciones.splice(calificaciones.findIndex(em => em.calificacion === 8), 1)
+
+console.log(calificaciones)
